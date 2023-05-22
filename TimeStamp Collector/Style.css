@@ -1,0 +1,43 @@
+.body{
+    max-width:130px;
+     max-height:300px;
+}
+.Headding {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    margin-left: 20px;
+    margin: 20px;
+    text-align: center;
+    margin-bottom:  20px; ;
+  }
+
+.TopButtons{
+    text-align:center;
+}
+
+#UrlRequests{
+    text-align:left;
+    border: 5px solid rgb(0, 0, 0);
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+input{
+    color: #f44336;
+}
+
+#Messages{
+    text-align: center;
+}
+
+
+.options{
+    text-align:center;
+   
+}
+
+#DeleteButton{
+    background-color: #f44336;
+}

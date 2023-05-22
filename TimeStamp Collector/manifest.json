@@ -1,0 +1,52 @@
+
+{
+   "manifest_version": 3,  
+   "action":{
+    "default_title": "timer Extensions Action Title",
+     "default_popup": "pop.html",
+     "default_icon": {
+      "16":"images/icon16.png",
+    "32":"images/icons32.png",
+    "48":"images/icon48.png",
+    "128":"images/icon128.png"
+    },
+  
+         "default_icons":
+         {
+             "16":"images/icon16.png",
+             "32":"images/icons32.png",
+             "48":"images/icon48.png",
+             "128":"images/icon128.png"
+         }
+         
+     },
+   "name": "YouTube Timestamp Link",
+   "description": "Get all the YouTube link with the timestamp from them.",
+   "icons":
+   {
+    "16":"images/icon16.png",
+    "32":"images/icons32.png",
+    "48":"images/icon48.png",
+    "128":"images/icon128.png"
+   },
+   "version": "1.0",
+   "permissions": 
+   ["activeTab",
+   "storage",
+   "nativeMessaging",
+   "declarativeContent",
+   "storage",
+   "scripting"],
+   "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["content-script.js","Pause_Script.js"]
+    }
+  ],
+
+   "host_permissions": ["*://*.youtube.com/watch?*"],
+   "background": {
+    "service_worker": "background.js"
+  }
+ 
+}
